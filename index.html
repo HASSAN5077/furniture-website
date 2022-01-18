@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><i class="fas fa-lightbulb"></i> furni
+      </a>
+      <form action="" class="search-form">
+        <input type="search" placeholder="search here...." id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </header>
+
+    <div class="fas fa-times" id="closer"></div>
+
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="shop.html">shop</a>
+      <a href="about.html">about</a>
+      <a href="team.html">team</a>
+      <a href="blog.html">blog</a>
+      <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="shopping-cart">
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-1.jpg" alt="" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity">1</span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-2.jpg" alt="" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity">1</span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-3.jpg" alt="" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity">1</span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-4.jpg" alt="" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity">1</span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00</span>
+        </div>
+      </div>
+
+      <h3 class="total">total : <span>$540.00</span></h3>
+
+      <a href="" class="btn">checkout cart</a>
+    </div>
+
+    <div class="login-form">
+      <form action="">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your mail" class="box" />
+        <input type="password" placeholder="enter password" class="box" />
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>forgot password? <a href=""> click here.</a></p>
+        <p>don't have account <a href="">create now</a></p>
+      </form>
+    </div>
+
+    <section class="home">
+      <div class="slides-container">
+        <div class="slide active">
+          <div class="content">
+            <span>new arrival</span>
+            <h3>flexible chair</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+              non dolore ipsam rerum iste a? Necessitatibus sunt ipsa fugiat.
+            </p>
+            <a href="" class="btn">shop now</a>
+          </div>
+          <div class="image">
+            <img src="image/home-img-1.png" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>new arrivals</span>
+            <h3>flexible chair</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequatur quisquam, magnam enim sed debitis perspiciatis.
+            </p>
+            <a href="#" class="btn">shop now</a>
+          </div>
+          <div class="image">
+            <img src="image/home-img-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-next" class="fas fa-angle-right" onclick="next()"></div>
+      <div id="slide-prev" class="fas fa-angle-left" onclick="prev()"></div>
+    </section>
+
+    <section class="banner-container">
+      <div class="banner">
+        <img src="image/banner-1.jpg" alt="" />
+        <div class="content">
+          <span>limited offer</span>
+          <h3>upto 50% off</h3>
+          <a href="" class="btn">shop now</a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="image/banner-2.jpg" alt="" />
+        <div class="content">
+          <span>limited offer</span>
+          <h3>upto 50% off</h3>
+          <a href="" class="btn">shop now</a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="image/banner-3.jpg" alt="" />
+        <div class="content">
+          <span>limited offer</span>
+          <h3>upto 50% off</h3>
+          <a href="" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="home.html"><i class="fas fa-arrow-right"></i>home</a>
+          <a href="shop.html"><i class="fas fa-arrow-right"></i>shop</a>
+          <a href="about.html"><i class="fas fa-arrow-right"></i>about</a>
+          <a href="team.html"><i class="fas fa-arrow-right"></i>team</a>
+          <a href="blog.html"><i class="fas fa-arrow-right"></i>blog</a>
+          <a href="contact.html"><i class="fas fa-arrow-right"></i>contact</a>
+        </div>
+        <div class="box">
+          <h3>extra links</h3>
+          <a href=""><i class="fas fa-arrow-right"></i>my order</a>
+          <a href=""><i class="fas fa-arrow-right"></i>my wish</a>
+          <a href=""><i class="fas fa-arrow-right"></i>my account</a>
+          <a href=""><i class="fas fa-arrow-right"></i>my favorite</a>
+          <a href=""><i class="fas fa-arrow-right"></i>terms of user</a>
+        </div>
+        <div class="box">
+          <h3>social links</h3>
+          <a href=""><i class="fas fa-arrow-right"></i>facebook</a>
+          <a href=""><i class="fas fa-arrow-right"></i>twitter</a>
+          <a href=""><i class="fas fa-arrow-right"></i>instagram</a>
+          <a href=""><i class="fas fa-arrow-right"></i>linkdin</a>
+          <a href=""><i class="fas fa-arrow-right"></i>pinterest</a>
+        </div>
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input type="email" placeholder="enter your email.." />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
