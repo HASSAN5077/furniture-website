@@ -346,7 +346,11 @@ form p a:hover {
     display: none;
 }
 .home .slides-container .slide .image{
-    height: 65rem;
+    flex: 1 1 40rem;
+}
+
+.home .slides-container .slide img{
+    width: 100%;
 }
 .home .slides-container .slide.active{
     display: flex;
